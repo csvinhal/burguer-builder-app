@@ -1,7 +1,7 @@
 import React from "react";
-import BurguerIngredient from "./BurguerIngredient/BurguerIngredient";
 
 import classes from "./Burguer.css";
+import BurguerIngredient from "./BurguerIngredient/BurguerIngredient";
 
 const burguer = props => {
   let transformedIngredients = Object.keys(props.ingredients)
@@ -13,8 +13,6 @@ const burguer = props => {
     .reduce((previous, curr) => {
       return previous.concat(curr);
     }, []);
-
-  console.log(transformedIngredients);
 
   if (transformedIngredients.length === 0) {
     transformedIngredients = <p>Please start adding ingredients!</p>;

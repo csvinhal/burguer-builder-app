@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Burguer from "../../components/Burguer/Burguer";
 
-import Aux from "../../hoc/Aux";
+import Burguer from "../../components/Burguer/Burguer";
+import Aux from "../../hoc/ReactAux";
 import BuildControls from "./../../components/Burguer/BuildControls/BuildControls";
 
 class BurguerBuilder extends Component {

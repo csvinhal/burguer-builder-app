@@ -1,4 +1,4 @@
-:local(.Button) {
+.Button {
   background-color: transparent;
   border: none;
   color: white;
@@ -10,15 +10,15 @@
   font-weight: bold;
 }
 
-:local(.Button:first-of-type) {
+.Button:first-of-type {
   margin-left: 0;
   padding-left: 0;
 }
 
-:local(.Success) {
+.Success {
   color: #5c9210;
 }
 
-:local(.Danger) {
+.Danger {
   color: #944317;
 }

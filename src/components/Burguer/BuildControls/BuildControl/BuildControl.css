@@ -1,11 +1,11 @@
-:local(.BuildControl) {
+.BuildControl {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 5px 0;
 }
 
-:local(.BuildControl button) {
+.BuildControl button {
   display: block;
   font: inherit;
   padding: 5px;
@@ -16,41 +16,43 @@
   outline: none;
 }
 
-:local(.BuildControl button:disabled) {
+.BuildControl button:disabled {
   background-color: #ac9980;
   border: 1px solid #7e7365;
   color: #ccc;
   cursor: default;
 }
 
-:local(.BuildControl button:hover:disabled) {
+.BuildControl button:hover:disabled {
   background-color: #ac9980;
   color: #ccc;
   cursor: not-allowed;
 }
 
-:local(.Label) {
+.Label {
   padding: 10px;
   font-weight: bold;
   width: 80px;
 }
 
-:local(.BuildControl .Less) {
+.BuildControl .Less {
   background-color: #d39952;
   color: white;
 }
 
-:local(.BuildControl .More) {
+.BuildControl .More {
   background-color: #8f5e1e;
   color: white;
 }
 
-:local(.BuildControl .Less:hover, .BuildControl .Less:active) {
+.BuildControl .Less:hover,
+.BuildControl .Less:active {
   background-color: #daa972;
   color: white;
 }
 
-:local(.BuildControl .More:hover, .BuildControl .More:active) {
+.BuildControl .More:hover,
+.BuildControl .More:active {
   background-color: #99703f;
   color: white;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Aux from "../../../hoc/ReactAux";
+import Aux from "../../../hoc/ReactAux/ReactAux";
 import Logo from "../../Logo/Logo";
 import Backdrop from "../../UI/Backdrop/Backdrop";
 import NavigationItems from "../NavigationItems/NavigationItems";

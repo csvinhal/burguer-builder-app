@@ -5,7 +5,6 @@ import BurguerIngredient from "./BurguerIngredient/BurguerIngredient";
 
 
 const burguer = props => {
-  console.log(props);
   let transformedIngredients = Object.keys(props.ingredients)
     .map(key => {
       return [...Array(props.ingredients[key])].map((_, index) => {

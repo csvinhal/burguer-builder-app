@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch } from 'react-router-dom';
-import BurguerBuilder from "./containers/BurguerBuilder/BurguerBuilder";
+import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
 import Checkout from './containers/Checkout/Checkout';
 import Orders from './containers/Orders/Orders';
 import Layout from "./hoc/Layout/Layout";
@@ -14,7 +14,7 @@ class App extends Component {
                     <Switch>
                         <Route path="/checkout" component={Checkout} />
                         <Route path="/orders" component={Orders} />
-                        <Route path="/" component={BurguerBuilder} />
+                        <Route path="/" component={BurgerBuilder} />
                     </Switch>
                 </Layout>
             </div>

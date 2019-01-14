@@ -1,14 +1,14 @@
 import React from "react";
 import { withRouter } from 'react-router-dom';
-import classes from "./Burguer.css";
-import BurguerIngredient from "./BurguerIngredient/BurguerIngredient";
+import classes from "./Burger.css";
+import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 
 
-const burguer = props => {
+const burger = props => {
   let transformedIngredients = Object.keys(props.ingredients)
     .map(key => {
       return [...Array(props.ingredients[key])].map((_, index) => {
-        return <BurguerIngredient key={key + index} type={key} />;
+        return <BurgerIngredient key={key + index} type={key} />;
       });
     })
     .reduce((previous, curr) => {
@@ -20,12 +20,12 @@ const burguer = props => {
   }
 
   return (
-    <div className={classes.Burguer}>
-      <BurguerIngredient type="bread-top" />
+    <div className={classes.Burger}>
+      <BurgerIngredient type="bread-top" />
       {transformedIngredients}
-      <BurguerIngredient type="bread-bottom" />
+      <BurgerIngredient type="bread-bottom" />
     </div>
   );
 };
 
-export default withRouter(burguer);
+export default withRouter(burger);

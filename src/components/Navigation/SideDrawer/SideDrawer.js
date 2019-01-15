@@ -1,10 +1,10 @@
 import React from "react";
-
 import Aux from "../../../hoc/ReactAux/ReactAux";
 import Logo from "../../Logo/Logo";
 import Backdrop from "../../UI/Backdrop/Backdrop";
 import NavigationItems from "../NavigationItems/NavigationItems";
 import classes from "./SideDrawer.css";
+
 
 const sideDrawer = props => {
   let attachedClasses = [classes.SideDrawer, classes.Close];
@@ -21,7 +21,7 @@ const sideDrawer = props => {
           <Logo />
         </div>
         <nav>
-          <NavigationItems />
+          <NavigationItems isAuthenticated={props.isAuth} />
         </nav>
       </div>
     </Aux>
